@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3f2fd;
+        }
+
+        .testimonial {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+
+
+            padding: 50px 0;
+            overflow:hidden ;
+        }
+
+        .testimonial .image {
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .testimonial .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        .slide p {
+            padding: 0 100px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: black;
+        }
+
+        .slide .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .details .name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .details .job {
+            font-size: 12px;
+            font-weight: 400;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="IMG20220802102227.jpg" alt="" class="image" />
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint dolorem exercitationem
+                        aspernatur repudiandae? Voluptatibus sint culpa autem animi atque veritatis officia consectetur
+                        natus harum, nam quos aperiam alias quaerat.</p>
+
+
+                    <div class="details">
+                        <span class="name">Swapnil</span>
+                        <span class="job">Maharashtra</span>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="IMG_20240127_164843.jpg" alt="" class="image" />
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint dolorem exercitationem
+                        aspernatur repudiandae? Voluptatibus sint culpa autem animi atque veritatis officia consectetur
+                        natus harum, nam quos aperiam alias quaerat.</p>
+
+
+                    <div class="details">
+                        <span class="name">Utkarsh</span>
+                        <span class="job">Gujrat</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <script src="swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

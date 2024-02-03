@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Tourism</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('your-background-image.jpg');
+ 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    section {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .popup {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      display: none;
+    }
+
+    .close {
+      cursor: pointer;
+      color: #555;
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('goa.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Travel & Tourism</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#" onclick="openEmailPopup()">Contact Us</a>
+      <a href="Registration.html">Registration</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <div id="emailContactPopup" class="popup">
+    <span class="close" onclick="closeEmailPopup()">&times;</span>
+    <h2>Contact Us via Email</h2>
+    <form>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitEmailForm()">Send Email</button>
+    </form>
+  </div>
+
+  <script>
+    function openEmailPopup() {
+      document.getElementById('emailContactPopup').style.display = 'block';
+    }
+
+    function closeEmailPopup() {
+      document.getElementById('emailContactPopup').style.display = 'none';
+    }
+
+    function submitEmailForm() {
+
+      alert('Email sent!');
+      closeEmailPopup();
+    }
+  </script>
+
+</body>
+
+</html>

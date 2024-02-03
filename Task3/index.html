@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern library</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .about-us {
+            height: 100vh;
+            width: 100%;
+            padding: 90px 0;
+            background: #ddd;
+        }
+
+        .pic {
+            height: 350px;
+        }
+
+        .about {
+            width: 1130px;
+            max-width: 85%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .text {
+            width: 540px;
+        }
+
+        .text h2 {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .text h5 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: #4070f4;
+        }
+
+        .text p {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        .data {
+            margin-top: 30px;
+        }
+
+        .read {
+            font-size: 18px;
+            background: #4070f4;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 6px;
+            transition: 0.5s;
+        }
+
+        .read:hover {
+            background: #000;
+            border: 1px solid #4070f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: black;
+            color: #fefefe;
+            margin: 1.2rem;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer .heading {
+            color: #fefefe;
+            max-width: 1010px;
+            width: 90%;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+
+        .footer .content {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1.5rem;
+        }
+
+        .footer .content p {
+            margin-bottom: 1.3rem;
+        }
+
+        .footer .content a {
+            text-decoration: none;
+            color: #fefefe;
+        }
+
+        .footer .content a:hover {
+            border-bottom: 1px solid #971717;
+        }
+
+        .footer .content h4 {
+            margin-bottom: 1.3rem;
+            font-size: 19px;
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        footer hr {
+            margin: 2rem 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-book"></i> Modern library</a>
+
+            <form action="" class="Search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn " class="fas fa-search"></div>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#features">features</a>
+                <a href="#arrived">arrived</a>
+                <a href="#Review">Review</a>
+                <a href="#Blogs">Blogs </a>
+                <a href="Login.html">Login </a>
+
+
+            </nav>
+        </div>
+    </header>
+
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured " class="fas fa-list"></a>
+        <a href="#arrived" class="fas fa-tags"></a>
+        <a href="#Review" class="fas fa-comments"></a>
+        <a href="#Blogs" class="fas fa-blog"> </a>
+
+
+    </nav>
+
+
+
+    <section class="about-us">
+        <div class="about">
+            <img src="LIBRARY.jpg" class="pic">
+            <div class="text">
+                <h2>Welcome to our library..</h2>
+                <h5><span></span></h5>
+                <p>
+                    At School, we are committed to fostering a dynamic and inclusive learning environment that nurtures
+                    the intellectual, social, and emotional growth of every student. Here's a glimpse into what makes
+                    our school special:
+
+
+                <div class="data">
+                    <a href="#" class="read">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featued books</span></h1>
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="python.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="java.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="html.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>our blogs</span></h1>
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero laboriosam adipisci eaque deserunt rerum dolore soluta perspiciatis? Cumque obcaecati eius error alias est odit illo nam libero laborum amet!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>learning space </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero laboriosam adipisci eaque deserunt rerum dolore soluta perspiciatis? Cumque obcaecati eius error alias est odit illo nam libero laborum amet!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog4.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero laboriosam adipisci eaque deserunt rerum dolore soluta perspiciatis? Cumque obcaecati eius error alias est odit illo nam libero laborum amet!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="blog3.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>blog title </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero laboriosam adipisci eaque deserunt rerum dolore soluta perspiciatis? Cumque obcaecati eius error alias est odit illo nam libero laborum amet!</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="footer">
+        <div class="heading">
+            <h2>Model School</h2>
+        </div>
+        <div class="content">
+            <div class="services">
+                <h4>Services</h4>
+                <p><a href="#">E-book</a></p>
+                <p><a href="#">IEEE Paper</a></p>
+                <p><a href="#">Research book</a></p>
+                <p><a href="#">Historic books</a></p>
+            </div>
+            <div class="social-media">
+                <h4>Social</h4>
+                <p>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                </p>
+                <p>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </p>
+                <p>
+                    <a href="#"><i class="fab fa-github"></i> Github</a>
+                </p>
+                <p>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </p>
+                <p>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </p>
+            </div>
+            <div class="links">
+                <h4>Quick links</h4>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Blogs</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+            <div class="details">
+                <h4 class="address">Address</h4>
+                <p>
+                    Model School,Ram colony<br />
+                    Vashi,Mumbai-400067
+                </p>
+                <h4 class="mobile">Mobile</h4>
+                <p><a href="#">+91-8596122345</a></p>
+                <h4 class="mail">Email</h4>
+                <p><a href="#">modelschool29@gmail.com</a></p>
+            </div>
+        </div>
+        <footer>
+            <hr />
+            ©2024 model School.
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
